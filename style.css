@@ -1,0 +1,107 @@
+/*### Primary */
+/*### Neutral */
+/*Font */
+/*14px */
+/*18px */
+/* ==========================
+   Global Reset and Base Styles
+========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: left;
+  background-color: hsl(27, 66%, 92%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-container {
+  width: max(35%, 20.5rem); /* take 328px notice mobile--> 375px */
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+}
+.main-container .head-section {
+  background-color: hsl(10, 79%, 65%);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(27, 66%, 92%);
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+.main-container .head-section .balance .balance-title {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(33, 100%, 98%);
+}
+.main-container .head-section .balance .balance-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.main-container .chart-section {
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 15px;
+  padding: 1rem;
+}
+.main-container .chart-section .divider {
+  margin: 1.2rem 0.75rem;
+  color: hsl(33, 100%, 98%);
+}
+.main-container .chart-section .chart .chart-title {
+  color: hsl(25, 47%, 15%);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+.main-container .chart-section .chart-container {
+  width: 80%;
+  /*height: 25rem;*/
+}
+.main-container .chart-section .footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  padding: 0 1rem;
+  color: hsl(25, 47%, 15%);
+}
+.main-container .chart-section .footer-section .total-month .balance-title {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(28, 10%, 53%);
+}
+.main-container .chart-section .footer-section .total-month .balance-amount {
+  font-size: 2.25rem;
+}
+.main-container .chart-section .footer-section .total-month {
+  text-align: right;
+}
+.main-container .chart-section .footer-section .total-month .percent {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.main-container .chart-section .footer-section .total-month .reference {
+  color: hsl(28, 10%, 53%);
+}
+
+footer {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

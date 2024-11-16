@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <!-- Include Chart.js-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <main class="main-container">
+    <section class="head-section">
+      <div class="balance">
+        <h1 class="balance-title">My balance</h1>
+        <h2 class="balance-amount">$921.48</h2>
+      </div>
+      <img class="logo-img" src="images/logo.svg" alt="">
+    </section>
+    
+    <section class="chart-section">
+    
+    <div class="chart">
+     <h3 class="chart-title">Spending - Last 7 days</h3>
+     <canvas id="chart-container"></canvas>
+    </div>
+    <hr class="divider">
+
+    <div class="footer-section">
+      <div class="total-month">
+        <h4 class="balance-title">Total this month</h4>
+        <h5 class="balance-amount">$478.33</h5>
+      </div>
+      <div class="total-month">
+        <h6 class="percent">+2.4%</h6>
+        <p class="reference">from last month</p>
+      </div>
+    </div>
+  </section>
+  </main>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Djamel1133" target="_blank">Djamel1133</a>.
+  </div>
+</body>
+<script src="script/script.js" defer></script>
+</html>

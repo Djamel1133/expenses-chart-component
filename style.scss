@@ -1,0 +1,131 @@
+/*### Primary */
+$Soft-red: hsl(10, 79%, 65%) ;
+$Cyan: hsl(186, 34%, 60%) ;
+
+/*### Neutral */
+$Dark-brown: hsl(25, 47%, 15%) ;
+$Medium-brown: hsl(28, 10%, 53%) ;
+$Cream: hsl(27, 66%, 92%) ;
+$Very-pale-orange: hsl(33, 100%, 98%) ;
+/*Font */
+$fs-small: 0.875rem; /*14px */
+$fs-medium: 1.125rem; /*18px */
+
+$fw-small: 400 ;
+$fw-medium: 700 ;
+
+/* ==========================
+   Global Reset and Base Styles
+========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+
+  font-size: $fs-small;
+  font-weight: $fw-small;
+  text-align: left;
+  background-color: $Cream;
+  
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  }  
+
+  .main-container {
+    width: max(35%, 20.5rem) ; /* take 328px notice mobile--> 375px */
+    padding: 1rem;
+    border-radius: 10px ;
+    position: relative;
+    
+    .head-section {
+      background-color: $Soft-red ;
+      padding: 1rem;
+      display: flex;    
+      justify-content: space-between;
+      color: $Cream;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+
+   .balance {
+      .balance-title{
+         margin: 0.5rem 0;
+         font-size: 1rem; 
+         font-weight: $fw-small;
+         color: $Very-pale-orange;
+      }
+      .balance-amount{
+        font-size: 1.5rem; 
+        font-weight: $fw-medium;
+      }
+      }
+    }
+
+    .chart-section {
+      background-color: $Very-pale-orange ;
+      border-radius: 15px ;
+      padding: 1rem;
+ 
+      .divider{ margin: 1.2rem 0.75rem; color: $Very-pale-orange; }
+      .chart {
+       .chart-title{
+        color: $Dark-brown;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+       }
+      }
+
+     .chart-container{
+      width: 80%;
+      /*height: 25rem;*/
+     }
+     
+     .footer-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: last baseline;
+      padding: 0 1rem;
+      color: $Dark-brown;
+
+     .total-month {
+    
+       .balance-title{
+        text-align: left;
+        font-size: 1rem;
+        font-weight: $fw-small;
+        color: $Medium-brown;
+       }
+       
+       .balance-amount{
+        font-size: 2.25rem;
+       } 
+      }
+
+      .total-month {
+        text-align: right;
+              
+       .percent{
+        font-size: 1.2rem;
+        font-weight: $fw-medium
+       }
+       .reference{
+        color: $Medium-brown;
+       }
+      }
+      }
+    }
+   }
+ 
+
+footer{
+  position: absolute;
+  top: 95% ;
+  left: 50%;
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+}
+  
