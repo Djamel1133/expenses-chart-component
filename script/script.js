@@ -9,10 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     .catch(error => console.error('Error fetching the JSON data:', error));
 
   function displayChart(xValues, yValues) {
-    const color1 = "hsl(10, 79%, 65%)" ;
-    const color2 = "hsl(186, 34%, 60%)" ;
-    const barColors = [color1, color1, color2, color1, color1, color1, color1];
-   
+    /* get max of value and color it with diffrent color */     
+    const barColors = yValues.map(value => 
+      value === Math.max(...yValues) ? "hsl(186, 34%, 60%)" : "hsl(10, 79%, 65%)" );
     
     new Chart(document.getElementById('chart-container'), {
       type: "bar",
